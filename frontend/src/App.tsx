@@ -8,18 +8,27 @@ import EditResume from './pages/ResumeUpdate/Forms/EditResume'
 
 const App = () => {
   return (
-    <div>
-      <Router>
-        <Routes>
-          {/* Default Routes */}
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/resume/:resumeId" element={<EditResume />} />
-        </Routes>
-      </Router>
-    </div>
+    <>
+      <div>
+        <Router>
+          <Routes>
+            {/* Default Routes */}
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/resume/:resumeId" element={<EditResume />} />
+          </Routes>
+        </Router>
+      </div>
+
+      <Toaster toastOptions={{
+        className: '',
+        style: {
+          fontSize: '13px',
+        }
+      }}></Toaster>
+    </>
   )
 }
 

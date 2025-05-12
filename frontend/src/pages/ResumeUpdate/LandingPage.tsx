@@ -1,8 +1,11 @@
 import React from 'react'
+import { Button } from '../../components/ui/button'
 
 const LandingPage = () => {
   return (
-    <div>LandingPage</div>
+    <div>
+      <Button>Hello</Button>
+    </div>
   )
 }
 
